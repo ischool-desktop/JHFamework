@@ -1,0 +1,7 @@
+﻿<User Name="Bill">
+    <Feature Code="F000" Permission="Execute"/>
+    <Feature Code="F001" Permission="View"/>
+    <Feature Code="F005" Permission="View,Edit"/>
+    <Feature Code="F009" Permission="View"/>
+    <Feature Code="F010" Permission="Execute"/>
+</User>

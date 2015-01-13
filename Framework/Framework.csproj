@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CDD2105-17D3-4620-8EF6-65CB41E8DBCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework</RootNamespace>
+    <AssemblyName>Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>%24/ischoolteam/ischool_Junior with FISCA/Framework</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://10.1.1.204:8080/tfs/tfs2008</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Framework/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\FiscaRuntime\addmodules\JHCore\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Campus.Configuration, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\CampusLibrary\Campus.Configuration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.9.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FISCA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\FISCA.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Authentication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\FISCA.Authentication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Deployment.Administration, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\FISCA.Deployment.Administration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.DSAClient, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\FISCA.DSAClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.DSAUtil, Version=3.2.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\FISCA.DSAUtil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Permission, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibraryProject\FISCA.Permission.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Presentation">
+      <HintPath>..\LibraryProject\FISCA.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseRecord.cs" />
+    <Compile Include="Configuration\Behavior_Extends.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataSynchronization\ChangeEntry.cs" />
+    <Compile Include="DataSynchronization\DBChangeMonitor.cs" />
+    <Compile Include="DataSynchronization\IChangeSetProvider.cs" />
+    <Compile Include="DataSynchronization\KeySet.cs" />
+    <Compile Include="DataSynchronization\PTChangeSetProvider.cs" />
+    <Compile Include="DataSynchronization\TableChangedEvent.cs" />
+    <Compile Include="DataSynchronization\TableChangeMonitor.cs" />
+    <Compile Include="DataSynchronization\TableConsts.cs" />
+    <Compile Include="DataSynchronization\UDTChangeSetProvider.cs" />
+    <Compile Include="EntityCache.cs" />
+    <Compile Include="FontStyles.cs" />
+    <Compile Include="IDataStorage.cs" />
+    <Compile Include="Int.cs" />
+    <Compile Include="PhotoUtil.cs" />
+    <Compile Include="Security\Catalog.cs" />
+    <Compile Include="Security\CatalogCollection.cs" />
+    <Compile Include="Security\CustomeFeature.cs" />
+    <Compile Include="Security\DetailItemFeature.cs" />
+    <Compile Include="Security\FeatureCodeAttribute.cs" />
+    <Compile Include="Security\FeatureItem.cs" />
+    <Compile Include="Security\IAceEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\ReportFeature.cs" />
+    <Compile Include="Security\RibbonFeature.cs" />
+    <Compile Include="Security\RoleAclSource.cs" />
+    <Compile Include="Security\IFeature.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="AsyncFieldLoader.cs" />
+    <Compile Include="AutoDictionary.cs" />
+    <Compile Include="AutoRetryOnWebExceptionAttribute.cs" />
+    <Compile Include="BugReporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BugReporter.Designer.cs">
+      <DependentUpon>BugReporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="DataChangeManage\CheckBoxSource.cs" />
+    <Compile Include="DataChangeManage\ChangeEventArgs.cs" />
+    <Compile Include="DataChangeManage\ChangeListener.cs" />
+    <Compile Include="DataChangeManage\ComboBoxSource.cs" />
+    <Compile Include="DataChangeManage\DataGridViewSource.cs" />
+    <Compile Include="DataChangeManage\IChangeSource.cs" />
+    <Compile Include="DataChangeManage\NumericUpDownSource.cs" />
+    <Compile Include="DataChangeManage\RadioButtonSource.cs" />
+    <Compile Include="DataChangeManage\TextBoxSource.cs" />
+    <Compile Include="DataChangeManage\ChangeSource.cs" />
+    <Compile Include="Configuration\ConfigProvider_App.cs" />
+    <Compile Include="Configuration\ConfigData.cs" />
+    <Compile Include="Configuration\ConfigurationCache.cs" />
+    <Compile Include="Configuration\ConfigurationManager.cs" />
+    <Compile Include="Configuration\ConfigurationRecord.cs" />
+    <Compile Include="Configuration\Configuration_ExtendMethods.cs" />
+    <Compile Include="BigEvent.cs" />
+    <Compile Include="Configuration\Typed_Extends.cs" />
+    <Compile Include="DataCollection.cs" />
+    <Compile Include="Diagnostic.cs" />
+    <Compile Include="DataChangedEventArgs.cs" />
+    <Compile Include="Security\UI\CatalogNode.cs" />
+    <Compile Include="Security\UI\ConfirmMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UI\ConfirmMsgBox.designer.cs">
+      <DependentUpon>ConfirmMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UI\FeatureNode.cs" />
+    <Compile Include="Security\UI\RoleAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UI\RoleAddForm.designer.cs">
+      <DependentUpon>RoleAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UI\RoleDAL.cs" />
+    <Compile Include="Security\UI\RoleData.cs" />
+    <Compile Include="Security\UI\RoleEventArgs.cs" />
+    <Compile Include="Security\UI\RoleListProxy.cs" />
+    <Compile Include="Security\UI\RoleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UI\RoleManager.Designer.cs">
+      <DependentUpon>RoleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UI\RolePermissionProxy.cs" />
+    <Compile Include="Security\UI\UserAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UI\UserAddForm.designer.cs">
+      <DependentUpon>UserAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UI\UserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UI\UserManager.designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlCreator.cs" />
+    <Compile Include="ExceptionReport.cs" />
+    <Compile Include="ExtraInformation.cs" />
+    <Compile Include="Configuration\IConfigurationProvider.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="IExtraProcesser.cs" />
+    <Compile Include="Legacy\ConfigurationCollection.cs" />
+    <Compile Include="DateTimeProcess\DateTimeHelper.cs" />
+    <Compile Include="DateTimeProcess\DateTimePaddingInfo.cs" />
+    <Compile Include="DateTimeProcess\PaddingMethod.cs" />
+    <Compile Include="DateTimeProcess\PatternMatcher.cs" />
+    <Compile Include="DSAServices.cs" />
+    <Compile Include="EnhancedErrorProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Feature\Config.cs" />
+    <Compile Include="Feature\Log.cs" />
+    <Compile Include="Feature\Permission.cs" />
+    <Compile Include="Feature\Personal.cs" />
+    <Compile Include="Feature\Security.cs" />
+    <Compile Include="Legacy\GlobalOld.cs" />
+    <Compile Include="LogInfo.cs" />
+    <Compile Include="MsgBox.cs" />
+    <Compile Include="MultiThreadBackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiThreadWorker.cs" />
+    <Compile Include="Legacy\PreferenceProvider.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BugReporter.resx">
+      <DependentUpon>BugReporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UI\ConfirmMsgBox.resx">
+      <DependentUpon>ConfirmMsgBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UI\RoleAddForm.resx">
+      <DependentUpon>RoleAddForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UI\RoleManager.resx">
+      <DependentUpon>RoleManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UI\UserAddForm.resx">
+      <DependentUpon>UserAddForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UI\UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextViewer.resx">
+      <DependentUpon>TextViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuickAccessNavContentPresentation.cs">
+    </Compile>
+    <Compile Include="Security\AccessOptions.cs" />
+    <Compile Include="Security\FeatureAce.cs" />
+    <Compile Include="Security\FeatureAcl.cs" />
+    <Compile Include="ReadOnlyCollection.cs" />
+    <Compile Include="Legacy\SchoolConfig.cs" />
+    <Compile Include="Legacy\SchoolInformation.cs" />
+    <Compile Include="StringComparer.cs" />
+    <Compile Include="Legacy\SystemConfig.cs" />
+    <Compile Include="TextViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextViewer.Designer.cs">
+      <DependentUpon>TextViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="Configuration\ConfigProvider_Global.cs" />
+    <Compile Include="Configuration\ConfigProvider_User.cs" />
+    <Compile Include="Decimal.cs" />
+    <Compile Include="SmartCache.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiral_lock_64.png" />
+    <Content Include="Library\Campus.Configuration.dll" />
+    <Content Include="Library\Campus.Configuration.pdb" />
+    <Content Include="Library\DevComponents.DotNetBar2.dll" />
+    <Content Include="Library\FISCA.Authentication.dll" />
+    <Content Include="Library\FISCA.Authentication.pdb" />
+    <Content Include="Library\FISCA.Authentication.xml" />
+    <Content Include="Library\FISCA.Deployment.Administration.dll" />
+    <Content Include="Library\FISCA.Deployment.Administration.pdb" />
+    <Content Include="Library\FISCA.Deployment.Administration.xml" />
+    <Content Include="Library\FISCA.dll" />
+    <Content Include="Library\FISCA.DSAClient.dll" />
+    <Content Include="Library\FISCA.DSAClient.pdb" />
+    <Content Include="Library\FISCA.DSAClient.xml" />
+    <Content Include="Library\FISCA.DSAUtil.dll" />
+    <Content Include="Library\FISCA.DSAUtil.pdb" />
+    <Content Include="Library\FISCA.DSAUtil.xml" />
+    <Content Include="Library\FISCA.pdb" />
+    <Content Include="Library\FISCA.Permission.dll" />
+    <Content Include="Library\FISCA.Permission.pdb" />
+    <Content Include="Library\FISCA.Permission.xml" />
+    <Content Include="Library\FISCA.Presentation.dll" />
+    <Content Include="Library\FISCA.Presentation.pdb" />
+    <Content Include="Library\FISCA.Presentation.xml" />
+    <Content Include="Security\Permission.xml" />
+    <Content Include="Security\UserSample.xml" />
+    <None Include="app.config" />
+    <None Include="Resources\FeatureDefinition.xml" />
+    <None Include="Resources\aspose.total.lic" />
+    <None Include="Resources\寬箭頭陰影.png" />
+    <None Include="Resources\寬箭頭.png" />
+    <None Include="Resources\紅箭頭.png" />
+    <None Include="Resources\Icon.png" />
+    <None Include="Resources\ischoolIcon.ico" />
+    <None Include="Resources\CourseIcon.png" />
+    <None Include="Resources\TeacherIcon.png" />
+    <None Include="Resources\StudentIcon.png" />
+    <None Include="Resources\ClassIcon.png" />
+    <None Include="噓~不要告訴johnny5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Initialization\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
